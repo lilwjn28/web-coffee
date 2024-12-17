@@ -1,0 +1,30 @@
+.page-admin .admin-layout {
+    display: flex;
+    height: 100vh; /* Chiều cao toàn màn hình */
+  }
+  
+  .page-admin .sidebar {
+    width: 250px; /* Chiều rộng sidebar */
+    background-color: #f8f9fa; /* Màu nền sidebar */
+    border-right: 1px solid #ddd; /* Đường viền phải */
+    padding: 20px;
+  }
+  
+  .page-admin .sidebar .nav-link {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000; /* Màu chữ */
+    text-decoration: none;
+  }
+  
+  .page-admin .sidebar .nav-link:hover {
+    background-color: #e9ecef;
+    border-radius: 4px;
+  }
+  
+  .page-admin .content {
+    flex: 1; /* Nội dung chiếm phần còn lại */
+    padding: 20px;
+    overflow-y: auto; /* Thêm thanh cuộn nếu nội dung dài */
+  }
+  

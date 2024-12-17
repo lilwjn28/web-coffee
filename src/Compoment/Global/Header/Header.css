@@ -1,0 +1,346 @@
+.header {
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../../../Asset/Images/Homepage/header-bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border-right: 1px solid var(--primary-color); */
+  /* box-shadow: 1px 1px var(--tertiary-color); */
+  transition: top 0.5s ease;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  padding-top: 0%
+  ;
+}
+.header .social {
+  gap: 15px;
+}
+.header .social a i {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Khi hover vào menu-item, sub-menu sẽ hiện ra */
+.menu-item {
+  position: relative;
+}
+.menu-item:hover .sub-menu-services {
+  display: block;
+  left: 100%; /* Hiển thị menu con sang bên phải */
+  top: 0; /* Đảm bảo menu con căn chỉnh đúng theo chiều dọc */
+}
+
+.sub-menu-services {
+  z-index: 9999;
+  display: none;
+  position: absolute;
+  min-width: 200px; /* Đảm bảo menu đủ rộng */
+  top: 0; /* Căn chỉnh menu theo chiều dọc */
+  background-color: var(--background-color); /* Đặt nền để sub-menu dễ nhìn */
+  text-align: center;
+}
+.sub-menu-services a {
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.sub-menu-services a:hover {
+  color: var(--tertiary-color);
+  transition: 0.5s ease-in-out;
+}
+.menu-pc {
+  width: 100%;
+  text-align: center;
+}
+.menu-pc a {
+  padding: 20px 0;
+  color: var(--primary-color);
+}
+.menu-pc a.active {
+  color: var(--tertiary-color);
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.5s ease-in-out;
+}
+
+.menu .menu-items a.active {
+  color: var(--tertiary-color);
+  transition: 0.5s ease-in-out;
+}
+
+.menu .nav-link:hover {
+  color: var(--tertiary-color);
+}
+
+.header .item-menu {
+  display: block;
+  width: 100%;
+}
+.header .item-menu:hover {
+  color: var(--primary-color);
+}
+
+.header .menu-items a {
+  text-decoration: none;
+  padding: 0 20px;
+}
+.header .container {
+  flex-direction: column;
+}
+.header .container .row {
+  width: 100%;
+}
+.header .container .col-lg-1 a img {
+  width: 100px;
+  height: 100%;
+}
+.header .header-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .search {
+  justify-content: center;
+  width: 70%;
+  align-items: center;
+  display: flex;
+}
+.header .container .user {
+  width: 30%;
+}
+.header .user .input-group input{
+  border: 1px solid var(--primary-color);
+}
+.menu {
+  width: 100%;
+}
+.header .user span {
+  color: var(--primary-color);
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+}
+.menu .menu-items {
+  justify-content: center;
+}
+.menu .menu-items a {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.search-bar {
+  width: 80%;
+}
+
+/* Menu ban đầu */
+.sticky-menu {
+  position: relative; /* Menu ở trạng thái bình thường, chưa sticky */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* animation: slideDown 1s ease-in-out; */
+  padding: 10px 0; /* Khoảng cách padding cho menu */
+  box-shadow: none; /* Bóng của menu khi chưa sticky */
+}
+
+/* Khi menu sticky */
+.sticky {
+  position: fixed;
+  top: -250px; /* Bắt đầu ở ngoài màn hình, trên cùng */
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tạo bóng khi menu sticky */
+  animation: slideDown 1s ease-in-out; /* Hiệu ứng rớt từ trên xuống */
+}
+.header .user span #quantity {
+  padding: 5px;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 100%;
+  width: 30px;
+  display: inline-block;
+  height: 30px;
+  line-height: 15px;
+  text-align: center;
+}
+/* Hiệu ứng rơi xuống khi cuộn */
+.sticky-menu.sticky {
+  top: 0; /* Sau khi người dùng cuộn, menu sẽ rớt xuống */
+  animation: slideDown 0.5s ease-in-out; /* Hiệu ứng rớt từ trên xuống */
+  background-color: var(--background-color);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* Trên mobile (màn hình nhỏ) */
+@media (max-width: 991px) {
+  .menu {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  /* Khi menu mở */
+  .menu.show {
+    left: 0;
+  }
+
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  .search-bar {
+    margin-left: auto;
+  }
+}
+
+/* BottomMenu.css */
+.bottom-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: none;
+  background-color: var(--background-color);
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.menu-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.menu-right .user{
+  border: 1px solid;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 15px;
+    margin: 0 10px;
+    font-style: italic;
+}
+.menu-right .user{
+  position: relative;
+}
+
+.menu-right .user .icon-cart{
+  padding: 0 10px;
+}
+.menu-right .user #quantity{
+  color: red;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: #333;
+}
+
+.menu-btn:hover {
+  color: #000;
+}
+.bottom-menu .menu-center{
+  width: 15%;
+  height: 80%;
+}
+.bottom-menu .menu-center .logo{
+  width: auto;
+  height: 100%;
+}
+/* Trên PC (màn hình lớn) */
+@media (max-width: 1400px) {
+  .header .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-toggle {
+    display: none; /* Ẩn nút toggle trên PC */
+  }
+
+  .search-bar {
+    margin: 0 auto; /* Đẩy search bar sang phải trên PC */
+  }
+}
+@media (max-width: 768px) {
+  .bottom-menu{
+    display: flex !important;
+    border-bottom: 1px solid var(--tertiary-color);
+    height: 100px;
+  }
+  .bottom-menu .menu-left{
+    width: 25%;
+  }
+  .bottom-menu .menu-center{
+    width: 30%;
+  }
+  .bottom-menu .menu-right{
+    width: 45%;
+  }
+  .header{
+    display: none;
+  }
+}
+
+@media (max-width: 610px) {
+  .bottom-menu{
+    padding: 0 5px;
+  }
+
+}

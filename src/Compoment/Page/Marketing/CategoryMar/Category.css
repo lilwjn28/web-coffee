@@ -1,0 +1,47 @@
+.banner-marketing{
+    margin: 0 auto;
+}
+
+.banner-marketing .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.list-about .col-lg-3{
+text-align: center;
+}
+.list-about .col-lg-3 img{
+height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.list-about .col-lg-3 p{
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: bold;
+    color: var(--tertiary-color);
+}
+
+.Product-Marketing{
+    text-align: center;
+}
+.Product-Marketing .mb-3{
+    justify-content: center;
+}
+
+.thumb-product-marketing a h4{
+  font-size: 16px;
+    margin: 10px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-align: start;
+}
+
+.Product-Marketing .nav-link{
+  color: var(--primary-color) !important;
+  font-size: 16px;
+  font-weight: 700;
+}

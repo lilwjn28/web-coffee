@@ -1,0 +1,8 @@
+.follows-mouse .chaser {
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease, opacity 0.1s ease; /* Hiệu ứng mượt mà khi di chuyển */
+    transform: translate(-50%, -50%); /* Đảm bảo phần tử nằm chính giữa con trỏ */
+    pointer-events: none; /* Để tránh gây ảnh hưởng đến các phần tử khác khi hover */
+    z-index: 9999;
+}

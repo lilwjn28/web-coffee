@@ -1,0 +1,106 @@
+/* UpdateProduct.css */
+
+.Update-Product {
+    background-color: #f8f9fa; /* Màu nền sáng */
+    padding: 20px 0;
+    min-height: 100vh;
+}
+
+.form-add-product {
+    background-color: #ffffff; /* Màu nền trắng cho form */
+    border-radius: 8px; /* Góc bo tròn */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    padding: 20px 30px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.form-add-product h1,
+.form-add-product label {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333333; /* Màu chữ đậm */
+    margin-bottom: 10px;
+}
+
+.form-add-product h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff; /* Màu xanh nổi bật */
+}
+
+.form-add-product .form-group {
+    margin-bottom: 20px;
+}
+
+.form-add-product .form-control {
+    border-radius: 6px; /* Bo tròn input */
+    border: 1px solid #ced4da; /* Màu viền input */
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-add-product .form-control:focus {
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Đổ bóng khi focus */
+}
+
+.form-add-product select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+.form-add-product select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.form-add-product textarea {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 16px;
+    resize: none; /* Không cho phép thay đổi kích thước */
+}
+
+.form-add-product button {
+    background-color: #007bff; /* Màu nút chính */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-add-product button:hover {
+    background-color: #0056b3; /* Màu nút khi hover */
+}
+
+.form-add-product button:focus {
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+}
+
+.form-add-product .form-feedback {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Đáp ứng cho thiết bị nhỏ hơn */
+@media (max-width: 576px) {
+    .form-add-product {
+        padding: 20px;
+    }
+
+    .form-add-product h1 {
+        font-size: 20px;
+    }
+}

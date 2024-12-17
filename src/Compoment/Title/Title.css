@@ -1,0 +1,22 @@
+.heading #description{
+    font-style: italic;
+    position: relative;
+    margin-left: 60px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.heading #description::before{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: var(--logo-primary-color);
+    position: absolute;
+    left: -60px;
+    top: 50%;
+}
+.heading #title{
+    color: blue;
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+}

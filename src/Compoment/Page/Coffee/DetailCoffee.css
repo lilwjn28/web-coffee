@@ -1,0 +1,117 @@
+.detail-coffee .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+.detail-coffee .banner-1 {
+  background-image: url("https://www.amayatheme.redsun.design/roastery/wp-content/uploads/sites/2/2020/12/coffeebean-hero-espresso.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.banner-detail-coffee {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.banner-detail-coffee h5 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: rotate(270deg);
+  width: max-content;
+  height: 40px;
+}
+.title-banner {
+  margin-left: 12%;
+  text-align: start;
+}
+.title-banner h3 {
+  font-size: 48px;
+}
+.title-banner h4 {
+  color: #db9457;
+}
+.title-banner span {
+  font-style: italic;
+}
+
+.products {
+  margin: auto 30%;
+  width: 40%;
+  text-align: center;
+}
+.banner-2 {
+  display: flex;
+  background-image: url("https://www.amayatheme.redsun.design/roastery/wp-content/uploads/sites/2/2021/02/boxes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.banner-2 .title-banner {
+  color: white;
+  margin: 10% auto;
+  margin-left: 5%;
+  width: 25%;
+}
+.banner-2 .title-banner h3 {
+  font-size: 52px;
+}
+.banner-2 .title-banner button {
+  padding: 4% 8%;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 15px;
+}
+
+.products-item {
+    margin-top: 2%;
+    border-radius: 15px;
+}
+.products-item p{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-style: oblique;
+}
+.products-item span{
+    font-style: italic;
+}
+.products-item button{
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgb(27, 26, 29);
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+}
+.banner-3 {
+    background-image: url("https://www.amayatheme.redsun.design/roastery/wp-content/uploads/sites/2/2020/12/Cold-Brew.jpg");
+    background-size: cover;
+    height: 100vh;
+   
+} 
+ .container {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items:center;
+    background-repeat: no-repeat;
+    text-align: right;
+ }
+ .container h5{
+    position: absolute;
+    margin-right: 50%;
+    top: 0%;
+    transform: rotate(-0.25deg);
+    width: max-content;
+    height: 40px;
+}
+ .title-p{
+    margin-left: 12%;
+    text-align: start;
+ }
+ 

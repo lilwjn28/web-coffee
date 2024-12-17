@@ -1,0 +1,21 @@
+.partner h4{
+    font-size: 36px;
+}
+.partner .container .row{
+    justify-content: center;
+    align-items: center;
+}
+.slide-partner img{
+    width: 100%;
+}
+.slide-partner .slick-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:768px){
+    .partner{
+        width: 85%;
+        margin: 0 auto;
+    }
+}

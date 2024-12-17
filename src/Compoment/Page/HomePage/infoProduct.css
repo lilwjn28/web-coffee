@@ -1,0 +1,8 @@
+.about-us .background-banner{
+    background-image: url("../../../Asset/Images/Product-coffee/84770f_220fb2706df2481698.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-position: right;
+    left: -50px;
+}

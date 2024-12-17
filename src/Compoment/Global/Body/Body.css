@@ -1,0 +1,9 @@
+.body-page {
+  margin: 200px auto;
+  background-color: var(--background-color);
+}
+@media (max-width: 768px) {
+    .body-page{
+        margin:100px 20px 0 20px ;
+    }
+}

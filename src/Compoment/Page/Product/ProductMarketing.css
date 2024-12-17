@@ -1,0 +1,28 @@
+.detail-product-marketing .heading .info {
+  justify-content: start;
+}
+.detail-product-marketing .heading .info #active, .detail-product-marketing .heading .info #normal{
+    font-weight: 600;
+}
+.detail-product-marketing .heading .info #active{
+    color: var(--secondary-color);
+}
+.detail-product-marketing .heading .info #normal{
+    color: var(--primary-color);
+}
+.detail-product-marketing .heading .info p span {
+  color: var(--tertiary-color);
+  font-weight: 700;
+}
+.detail-product-marketing .detail-product-thumb{
+  text-align: center;
+}
+.detail-product-marketing .detail-product-thumb a{
+  padding: 2% 5%;
+  border: 1px solid var(--background-button-color);
+  display: inline-block;
+  background-color: var(--background-button-color);
+  color: white;
+  border-radius: 10px;
+  margin: 20px 40px;
+}

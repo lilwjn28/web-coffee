@@ -1,0 +1,109 @@
+/* .footer {
+    background-image: url(../../../Asset/Images/Homepage/header-bg1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+} */
+ 
+.footer h4{
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+}
+.footer-col-1{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+   
+}
+@media (max-width: 768px){
+    .footer .footer-col-1 ul{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-wrap: wrap;
+    }
+    .footer .footer-col-1 ul li{
+        width: calc(50% - 20px);
+    }
+}
+
+
+
+.footer .footer-col2{
+    justify-content: start;
+    align-items: start;
+}
+
+.footer .footer-col2 ul li {
+    margin-bottom: 20px;
+   padding: 10px 20px;
+   border-radius: 15px;
+   background-color: var(--primary-color);
+   box-shadow: 2px 2px var(--secondary-color);
+   
+}
+
+.footer .footer-col2 ul li a{
+    color: white;
+    justify-content: space-between;
+    font-size: 15px;
+    
+    
+}
+.footer .footer-col2 ul li a:hover i{
+    transform: rotate(-45deg);
+    transition: .5s ease-in-out;
+}
+.footer .footer-col2 ul li a i {
+    display: inline-block;
+    padding: 0 10px;
+    transform: rotate(-45deg);
+    transition: .5s ease-in-out;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 100%;
+    color: var(--primary-color);
+    border-radius: 100%;
+}
+.footer .footer-col3{
+    align-items: start;
+    justify-content: center;
+}
+.footer .footer-col3 ul li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all .5s ease-in-out;
+}
+.footer .footer-col3 ul li i{
+    font-size: 14px;
+    color: var(--primary-color);
+    margin-right: 5px;
+    transition: all .5s ease-in-out;
+
+}
+
+.footer .footer-col3 ul li a {
+    color: var(--title-color);
+    transition: all .5s ease-in-out;
+
+}
+.footer .footer-col3 ul li a:hover a{
+    color: var(--primary-color);
+}
+.footer .footer-col3 ul li :hover i{
+    transform: rotate(-10deg);
+}
+.footer .footer-col4 ul li:hover a{
+    color: var(--primary-color);
+
+}
+.footer .footer-col4 ul li:hover i{
+    margin-left: 10px;
+    
+}

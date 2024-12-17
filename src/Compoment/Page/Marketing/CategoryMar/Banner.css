@@ -1,0 +1,166 @@
+.banner-marketing {
+  background-image: url("../../../../Asset/Images/Homepage/header-bg1.png");
+  width: auto;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  
+}
+.banner-marketing .content-banner {
+  align-items: start;
+  color: var(--title-color);
+}
+.banner-marketing .content-banner h4 {
+  color: var(--h2-color);
+  position: relative;
+  padding: 10px 20px;
+}
+.banner-marketing .content-banner h4::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: all 0.4s;
+  background: var(--background-button-color);
+  opacity: 10%;
+  border-radius: 8px;
+}
+.banner-marketing .image-banner {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+ 
+}
+.banner-marketing .image-banner img {
+  width: 50%;
+  z-index: 2;
+  
+}
+.banner-marketing .image-banner .bg-person-banner,
+.banner-marketing .image-banner .loudspeaker,
+.banner-marketing .image-banner .sudan,
+.banner-marketing .image-banner .data-images,
+.banner-marketing .image-banner .lite,
+.banner-marketing .image-banner .elements2,
+.banner-marketing .image-banner .elements3 {
+  position: absolute;
+  z-index: 1;
+}
+.banner-marketing .image-banner .elements2 {
+  z-index: 0;
+  top: 0;
+  right: 20%;
+  transform: rotate(25deg);
+  width: 15%;
+}
+.banner-marketing .image-banner .elements3 {
+  z-index: 0;
+  bottom: 0;
+  left: 10%;
+  transform: rotate(25deg);
+  width: 25%;
+}
+.banner-marketing .image-banner .lite {
+  bottom: 20%;
+  right: -5%;
+  width: 20%;
+  /* alternate - Lặp đảo ngược */
+  /* infinite - Lặp vô tận */
+  animation: animationtop 2s infinite alternate ease-in-out;
+}
+.banner-marketing .image-banner .data-images {
+  bottom: -10%;
+  left: -25%;
+  width: 35%;
+  /* alternate - Lặp đảo ngược */
+  /* infinite - Lặp vô tận */
+  animation: animationleft 2s infinite alternate ease-in-out;
+}
+.banner-marketing .image-banner .sudan {
+  animation: animationleft 2s infinite alternate ease-in-out;
+  top: 0;
+  right: 0;
+  width: 20%;
+}
+.banner-marketing .image-banner .loudspeaker {
+  top: 0;
+  left: 0;
+  width: 20%;
+  /* alternate - Lặp đảo ngược */
+  /* infinite - Lặp vô tận */
+  animation: animationtop 2s infinite alternate ease-in-out;
+}
+.banner-marketing .image-banner .bg-person-banner {
+  top: 10%;
+  width: 100%;
+  left: 0;
+}
+
+.banner-marketing .contact .submit{
+  width: 100%;
+  justify-content: space-between;
+}
+.banner-marketing .contact-banner {
+  padding: 1% 3%;
+  border-radius: 10px;
+  background-color: var(--background-button-color);
+  color: white;
+  border: 1px solid var(--background-button-color);
+}
+.banner-marketing .contact {
+  width: 80%;
+  border-radius: 15px;
+  align-items: flex-start;
+  font-size: 20px;
+}
+.banner-marketing .contact button {
+  padding: 1% 3%;
+  border-radius: 10px;
+  background-color: var(--background-button-color);
+  color: white;
+  border: 1px solid var(--background-button-color);
+}
+
+.banner-marketing .anni {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.banner-marketing .anni img {
+  animation: rotate 5s linear infinite;
+  width: 50px;
+  height: auto;
+}
+
+@media (max-width: 1250px) {
+  .banner-marketing .content-banner {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .banner-marketing .anni {
+    left: 80%;
+  }
+}
+@keyframes animationtop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+@keyframes animationleft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(50px);
+  }
+}

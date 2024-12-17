@@ -1,0 +1,61 @@
+.about-marketing .list-about {
+  margin: 20px 0;
+}
+.about-marketing .list-about .col-lg-4 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: -100px;
+}
+.about-marketing .content-banner .features .thumb-features {
+  width: calc(25% - 20px);
+}
+.about-marketing .content-banner .features .thumb-features p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+.list-about {
+  text-align: center;
+  align-items: flex-start;
+  
+  
+}
+.list-about img {
+  width: 50%;
+  left: -100px;
+  
+}
+.list-about p {
+  margin: 10px 0;
+  color: var(--tertiary-color);
+  font-weight: 600;
+  left: -100px;
+}
+.know-about-marketing .heading-know-about-marketing {
+  width: auto;
+  height: 25vh;
+}
+.know-about-marketing .content-know-about-marketing {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 75vh;
+  background-image: url("../../../../Asset/Images/Product-Marketing/background-banner-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.know-about-marketing .content-know-about-marketing .col-lg-8 {
+  padding: 0 50px;
+  color: white;
+}
+.know-about-marketing .content-know-about-marketing .overlay {
+  top: 0;
+  left: 0;
+}
+.know-about-marketing .content-know-about-marketing .content-banner {
+  position: relative;
+  z-index: 99;
+}

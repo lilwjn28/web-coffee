@@ -1,0 +1,131 @@
+.homepage {
+  background-color: var(--background-color);
+  height: 100%;
+  width: 100%;
+}
+.banner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.background-images {
+  background-image: url("../../../Asset/Images/Homepage/image-banner/bghomepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% ;
+  height: 100%;
+  z-index: 8;
+  
+ 
+}
+.overlay {
+  position:absolute;
+  z-index: 9;
+  left: 100px;
+  right:  0 ;
+ 
+  background-color: black;
+  opacity: 0.2;
+  width: 90%;
+  z-index: 20;
+  height: 100%;
+}
+.text-thumb {
+  position: relative;
+  z-index: 10;
+  justify-items: center;
+  color: white;
+  top: 40%;
+  left: 0;
+  text-align: center;
+}
+.text-thumb h3 {
+  font-size: 48px;
+  color: var(--tertiary-color);
+  padding: 25px 0;
+}
+.text-thumb h2 {
+  color: rgb(248, 245, 245);
+  font-size: 72px;
+}
+.text-thumb button {
+  background-color: var(--tertiary-color);
+  padding: 1% 3%;
+  color: white;
+  border: unset;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px var(--tertiary-color);
+}
+.about-us .container {
+  margin: 0 auto;
+}
+.about-us .container .row .col-lg-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-us iframe {
+  width: 100%;
+  height: 350px;
+}
+
+.info-product {
+  margin: 0;
+  padding: 0;
+}
+.info-product li {
+  border-bottom: 1px dotted var(--tertiary-color);
+  padding: 2px;
+  margin: 2px;
+}
+
+@media (max-width: 1250px) {
+  .homepage .about-us .text-center h2 {
+    font-size: 100px;
+  }
+  .homepage .about-us .text-center h3 {
+    font-size: 32px;
+    top: 40%;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 992px) {
+  .homepage .about-us .text-center h2 {
+    font-size: 64px;
+  }
+  .homepage .about-us .text-center h3 {
+    font-size: 24px;
+  }
+  .about-us .text-center {
+    height: 150px;
+  }
+  .about-us .container .row .col-lg-6 {
+    height: auto;
+  }
+  .about-us .text-center h3::after {
+    left: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .body-page {
+    margin: 0 !important;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  .homepage .about-us .text-center h2 {
+    font-size: 62px;
+  }
+  .homepage .about-us .text-center h3 {
+    font-size: 20px;
+    top: 40%;
+    line-height: 1.5;
+  }
+  .about-us .text-center h3::after {
+    left: 40%;
+    width: 80px;
+  }
+}

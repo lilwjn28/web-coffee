@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: flex-end; /* Đẩy nút sang phải */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    position: fixed; /* Header cố định ở trên */
+    top: 0;
+    width: 100%; /* Chiều rộng toàn trang */
+    z-index: 1000; /* Đảm bảo nằm trên cùng */
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.body {
+    margin-top: 60px; /* Đảm bảo nội dung không bị header che */
+}
+
+.header-content {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.header-content .btn {
+    padding: 8px 16px;
+    font-weight: bold;
+}
